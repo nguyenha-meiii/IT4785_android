@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:text="From DuongQuach"
+        android:text="From Thu Hà"
         android:textColorLink="#000000"
         android:fontFamily="sans-serif-light"
         android:textSize="34sp"

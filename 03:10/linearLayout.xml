@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- TextView to show the result -->
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="0"
+        android:textSize="40sp"
+        android:background="#ECECEC"
+        android:padding="16dp"/>
+
+    <!-- Row for CE, C, BS, / buttons -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:layout_weight="1" android:text="CE"/>
+        <Button android:layout_weight="1" android:text="C"/>
+        <Button android:layout_weight="1" android:text="BS"/>
+        <Button android:layout_weight="1" android:text="/"/>
+    </LinearLayout>
+
+    <!-- Row for 7, 8, 9, * buttons -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:layout_weight="1" android:text="7"/>
+        <Button android:layout_weight="1" android:text="8"/>
+        <Button android:layout_weight="1" android:text="9"/>
+        <Button android:layout_weight="1" android:text="x"/>
+    </LinearLayout>
+
+    <!-- Row for 4, 5, 6, - buttons -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:layout_weight="1" android:text="4"/>
+        <Button android:layout_weight="1" android:text="5"/>
+        <Button android:layout_weight="1" android:text="6"/>
+        <Button android:layout_weight="1" android:text="-"/>
+    </LinearLayout>
+
+    <!-- Row for 1, 2, 3, + buttons -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:layout_weight="1" android:text="1"/>
+        <Button android:layout_weight="1" android:text="2"/>
+        <Button android:layout_weight="1" android:text="3"/>
+        <Button android:layout_weight="1" android:text="+"/>
+    </LinearLayout>
+
+    <!-- Row for +/-, 0, = buttons -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:layout_weight="1" android:text="+/-"/>
+        <Button android:layout_weight="1" android:text="0"/>
+        <Button android:layout_weight="1" android:text="="/>
+    </LinearLayout>
+
+</LinearLayout>

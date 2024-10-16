@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- TextView to show the result -->
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="0"
+        android:textSize="40sp"
+        android:background="#ECECEC"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Define buttons with constraints -->
+    <Button android:id="@+id/btn_ce" android:text="CE"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_result"
+        app:layout_constraintEnd_toStartOf="@id/btn_c" />
+
+    <Button android:id="@+id/btn_c" android:text="C"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/btn_ce"
+        app:layout_constraintEnd_toStartOf="@id/btn_bs"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <Button android:id="@+id/btn_bs" android:text="BS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/btn_c"
+        app:layout_constraintEnd_toStartOf="@id/btn_div"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <Button android:id="@+id/btn_div" android:text="/"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/btn_bs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <!-- Define more buttons for numbers and operations below using similar constraints -->
+    <!-- Add your other button rows here following the same pattern -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
